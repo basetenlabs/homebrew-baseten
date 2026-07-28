@@ -1,15 +1,33 @@
 # homebrew-baseten
 
-Homebrew tap for the [Baseten CLI](https://github.com/basetenlabs/baseten-cli)
-and [Baseten Switch](https://github.com/basetenlabs/baseten-switch).
+Homebrew tap for the cross-platform
+[Baseten CLI](https://github.com/basetenlabs/baseten-cli) and the macOS beta of
+[Baseten Switch](https://github.com/basetenlabs/baseten-switch).
 
-## Install Baseten Switch
-
-Baseten Switch is currently beta. The bundled Mac app is ad-hoc signed and
-not notarized by Apple, so macOS may require first-launch approval under
-System Settings > Privacy & Security.
+## Install the Baseten CLI
 
 ```bash
+# Add the tap
+brew tap basetenlabs/baseten
+
+# Trust the tap (required for third-party taps on Homebrew 6.0+)
+brew trust basetenlabs/baseten
+
+# Install the CLI
+brew install baseten
+```
+
+Then run `baseten --help` to get started, or see the
+[Baseten CLI README](https://github.com/basetenlabs/baseten-cli) for usage.
+
+## Install Baseten Switch on macOS (beta)
+
+Baseten Switch requires macOS 13 Ventura or later. The bundled Mac app is
+ad-hoc signed and not notarized by Apple, so macOS may require first-launch
+approval under System Settings > Privacy & Security.
+
+```bash
+brew trust basetenlabs/baseten
 brew install basetenlabs/baseten/baseten-switch
 ```
 
@@ -25,27 +43,18 @@ baseten-switch doctor --probe
 See the [Baseten Switch README](https://github.com/basetenlabs/baseten-switch)
 for usage and configuration.
 
-## Install the Baseten CLI only
+## Upgrade
+
+Upgrade the Baseten CLI:
 
 ```bash
-brew install basetenlabs/baseten/baseten
+brew upgrade basetenlabs/baseten/baseten
 ```
-
-Then run `baseten --help` to get started, or see the
-[baseten-cli README](https://github.com/basetenlabs/baseten-cli) for usage.
-
-## Upgrade
 
 If you installed Baseten Switch, upgrade it and the Baseten CLI:
 
 ```bash
 brew upgrade basetenlabs/baseten/baseten-switch basetenlabs/baseten/baseten
-```
-
-If you installed only the Baseten CLI:
-
-```bash
-brew upgrade basetenlabs/baseten/baseten
 ```
 
 ## How this tap is maintained
