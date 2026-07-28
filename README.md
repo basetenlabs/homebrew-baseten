@@ -36,9 +36,16 @@ Then run `baseten --help` to get started, or see the
 
 ## Upgrade
 
+If you installed Baseten Switch, upgrade it and the Baseten CLI:
+
 ```bash
-brew upgrade baseten-switch
-brew upgrade baseten
+brew upgrade basetenlabs/baseten/baseten-switch basetenlabs/baseten/baseten
+```
+
+If you installed only the Baseten CLI:
+
+```bash
+brew upgrade basetenlabs/baseten/baseten
 ```
 
 ## How this tap is maintained
