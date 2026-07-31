@@ -5,8 +5,8 @@
 class BasetenSwitch < Formula
   desc "Local gateway routing AI coding harnesses between native providers and Baseten"
   homepage "https://github.com/basetenlabs/baseten-switch"
-  url "https://github.com/basetenlabs/baseten-switch/releases/download/v0.1.0/baseten-switch_0.1.0_darwin_universal.zip"
-  sha256 "c2e8b347a6edacce4a6fba73f5a49afc8cbdf7264ca93c387ea03769d8ffe381"
+  url "https://github.com/basetenlabs/baseten-switch/releases/download/v0.2.0/baseten-switch_0.2.0_darwin_universal.zip"
+  sha256 "78c7486c51ba2c78915570d8c474bed2e15b59aaee598a64cb288cfaa11049a3"
   license "MIT"
 
   depends_on "basetenlabs/baseten/baseten"
