@@ -5,21 +5,21 @@
 class Baseten < Formula
   desc "CLI for Baseten"
   homepage "https://github.com/basetenlabs/baseten-cli"
-  version "1.5.0"
+  version "1.6.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/basetenlabs/baseten-cli/releases/download/v1.5.0/baseten_1.5.0_darwin_amd64.tar.gz"
-      sha256 "59d88cf99a1b13a6a4064dd33497b5e14aca27e3760b597e144b4172f197d87f"
+      url "https://github.com/basetenlabs/baseten-cli/releases/download/v1.6.0/baseten_1.6.0_darwin_amd64.tar.gz"
+      sha256 "b5ca62f7054ac8b3ccdfdd33e982580f047b0e1a0c02dbbb237a0b21bca12fd5"
 
       define_method(:install) do
         bin.install "baseten"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/basetenlabs/baseten-cli/releases/download/v1.5.0/baseten_1.5.0_darwin_arm64.tar.gz"
-      sha256 "4ceee0f79a209b57b3f9afaf60f83140c97fd0bf16d9830612a4e7d6ca44a32a"
+      url "https://github.com/basetenlabs/baseten-cli/releases/download/v1.6.0/baseten_1.6.0_darwin_arm64.tar.gz"
+      sha256 "3979122d0b53b81094250f2ab18c3f8de8d387910eaaf80e538f6498131fe2be"
 
       define_method(:install) do
         bin.install "baseten"
@@ -29,15 +29,15 @@ class Baseten < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/basetenlabs/baseten-cli/releases/download/v1.5.0/baseten_1.5.0_linux_amd64.tar.gz"
-      sha256 "5d2b89c3e6775eeab0372881aee3418ad6024b86451084327fd059671ef18629"
+      url "https://github.com/basetenlabs/baseten-cli/releases/download/v1.6.0/baseten_1.6.0_linux_amd64.tar.gz"
+      sha256 "74ee1098597f75045f93cd9ff9795002809b1118f2887d2fef149ab64ae6210c"
       define_method(:install) do
         bin.install "baseten"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/basetenlabs/baseten-cli/releases/download/v1.5.0/baseten_1.5.0_linux_arm64.tar.gz"
-      sha256 "c5765e757a114ee6427d691ded879ff18868be1c5e634953977e073d9b4e3ddf"
+      url "https://github.com/basetenlabs/baseten-cli/releases/download/v1.6.0/baseten_1.6.0_linux_arm64.tar.gz"
+      sha256 "a9fc757c5b789f561fa7c8b5b0107fc5c1d97b6be3239cb959c7fdc6ee9e22c6"
       define_method(:install) do
         bin.install "baseten"
       end
